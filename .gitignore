@@ -1,0 +1,10 @@
+dist/
+node_modules
+.cache
+.DS_Store
+yarn-error.log
+_book
+.idea
+temp
+coverage
+.history/

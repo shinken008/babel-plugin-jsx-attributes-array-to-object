@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-jsx-attributes-array-to-object",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A tool for transforming jsx attributes array to object",
   "main": "dist/index.js",
   "scripts": {

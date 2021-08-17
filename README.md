@@ -20,16 +20,10 @@ the code will be transformed:
 var a = {
   color: 'red'
 };
-<div style={__mergeObject(a, {
+var b = {};
+<div style={Object.assign({}, a, {
   color: 'gray'
 })}></div>;
-
-function __mergeObject(...args) {
-  return args.reduce((obj, next) => {
-    obj = Object.assign(Object.assign({}, obj), next);
-    return obj;
-  }, {});
-}
 ```
 
 ## Usage
@@ -45,7 +39,9 @@ npm install --save-dev babel-plugin-jsx-attributes-array-to-object
 ```js
 {
   plugins: [
-    [require('babel-plugin-jsx-attributes-array-to-object')]
+    [require('babel-plugin-jsx-attributes-array-to-object'), {
+      attributes: ['style'],
+    }]
   ]
 }
 ```

@@ -8,7 +8,7 @@ var a = { color: 'red' };
 ```
 and the configure like this:
 ```
-// .babelrc
+// babel.config.js
 [
   syntaxJSX,
   [require('babel-plugin-jsx-attributes-array-to-object
